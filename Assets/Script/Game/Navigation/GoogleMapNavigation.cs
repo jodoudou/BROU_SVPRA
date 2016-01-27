@@ -80,7 +80,7 @@ public class GoogleMapNavigation: MonoBehaviour, Observer
 	{
 		routeNavigation = new RouteNavigation(lineRenderer, directLineRenderer, this);
 		toolBox = ToolBox.Instance;
-		directLineRenderer.enabled = false;
+		directLineRenderer.enabled = true;
 		toolBox.loadingScreen.enable(true);
 		userGPSLocation = new GeoCoordinate();
 		projection = new MercatorProjection(zoom);

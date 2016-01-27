@@ -29,7 +29,7 @@ public class RouteNavigation: Observer
 	/// <summary>
 	/// if user in a trigger
 	/// </summary>
-	private bool inTrigger = false;
+	private bool inTrigger = true;
 	/// <summary>
 	/// line that indicate the direction to take
 	/// using google direction
