@@ -1,0 +1,19 @@
+<Parcours>
+	<Waypoints start="0" end="0">
+		<Waypoint id="0">
+			<Lat>46.215235</Lat>
+			<Lng>5.241015</Lng>
+			<Conditions>
+				<TriggerId>start</TriggerId>
+			</Conditions>
+		</Waypoint>
+	</Waypoints>
+	<Triggers>
+		<Trigger id="start">
+			<Empty/>
+			<PreTriggerObject>
+				<ObjectId>755</ObjectId>
+			</PreTriggerObject>
+		</Trigger>
+	</Triggers>
+</Parcours>

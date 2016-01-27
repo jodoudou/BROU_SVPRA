@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{11B77F92-14EE-675B-0432-4D14BEE2C547}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_0;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;LOG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>S:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>S:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Script\Data\Attraction.cs" />
+     <Compile Include="Assets\Script\Data\Data.cs" />
+     <Compile Include="Assets\Script\Data\Json.cs" />
+     <Compile Include="Assets\Script\Data\Route.cs" />
+     <Compile Include="Assets\Script\Data\Settings.cs" />
+     <Compile Include="Assets\Script\Data\Trigger\EmptyTrigger.cs" />
+     <Compile Include="Assets\Script\Data\Trigger\Factories\EmptyFactory.cs" />
+     <Compile Include="Assets\Script\Data\Trigger\Factories\FindKeyFactory.cs" />
+     <Compile Include="Assets\Script\Data\Trigger\Factories\MultipleChoiceFactory.cs" />
+     <Compile Include="Assets\Script\Data\Trigger\Factories\QuestionAnswerFactory.cs" />
+     <Compile Include="Assets\Script\Data\Trigger\Factories\TriggerFactory.cs" />
+     <Compile Include="Assets\Script\Data\Trigger\FindKeyTrigger.cs" />
+     <Compile Include="Assets\Script\Data\Trigger\MultipleChoiceTrigger.cs" />
+     <Compile Include="Assets\Script\Data\Trigger\QuestionAnswerTrigger.cs" />
+     <Compile Include="Assets\Script\Data\Trigger\Trigger.cs" />
+     <Compile Include="Assets\Script\Data\Trigger\UI\FindKeyUI.cs" />
+     <Compile Include="Assets\Script\Data\Trigger\UI\MultipleChoicesUI.cs" />
+     <Compile Include="Assets\Script\Data\Trigger\UI\QuestionAnswerUI.cs" />
+     <Compile Include="Assets\Script\Game\AR\ArCamera.cs" />
+     <Compile Include="Assets\Script\Game\AR\ArLocation.cs" />
+     <Compile Include="Assets\Script\Game\AR\ArObject.cs" />
+     <Compile Include="Assets\Script\Game\AR\LookAt.cs" />
+     <Compile Include="Assets\Script\Game\GameManager.cs" />
+     <Compile Include="Assets\Script\Game\Navigation\GoogleMapNavigation.cs" />
+     <Compile Include="Assets\Script\Game\Navigation\MercatorProjection.cs" />
+     <Compile Include="Assets\Script\Game\Navigation\NavigationCamera.cs" />
+     <Compile Include="Assets\Script\Game\Navigation\RouteNavigation.cs" />
+     <Compile Include="Assets\Script\Game\Navigation\UIGameObject.cs" />
+     <Compile Include="Assets\Script\Game\NextStep.cs" />
+     <Compile Include="Assets\Script\Menu\Initialization.cs" />
+     <Compile Include="Assets\Script\Menu\MenuBuilder.cs" />
+     <Compile Include="Assets\Script\Menu\MenuButton.cs" />
+     <Compile Include="Assets\Script\Menu\MenuManager.cs" />
+     <Compile Include="Assets\Script\Menu\OptionRoute.cs" />
+     <Compile Include="Assets\Script\Sensor\Accelerometer.cs" />
+     <Compile Include="Assets\Script\Sensor\GPS.cs" />
+     <Compile Include="Assets\Script\Sensor\GPSAndroid.cs" />
+     <Compile Include="Assets\Script\Sensor\GPSFake.cs" />
+     <Compile Include="Assets\Script\Sensor\GPSGeneral.cs" />
+     <Compile Include="Assets\Script\Sensor\Gyro.cs" />
+     <Compile Include="Assets\Script\Sensor\Orientation.cs" />
+     <Compile Include="Assets\Script\Sensor\SensorFusion.cs" />
+     <Compile Include="Assets\Script\Sensor\SensorManager.cs" />
+     <Compile Include="Assets\Script\Sensor\StepDetector.cs" />
+     <Compile Include="Assets\Script\Util\ContinuousRotation.cs" />
+     <Compile Include="Assets\Script\Util\CustomLineRenderer.cs" />
+     <Compile Include="Assets\Script\Util\DontDestroy.cs" />
+     <Compile Include="Assets\Script\Util\Download.cs" />
+     <Compile Include="Assets\Script\Util\GeoCoordinate.cs" />
+     <Compile Include="Assets\Script\Util\Load.cs" />
+     <Compile Include="Assets\Script\Util\LoadingScreen.cs" />
+     <Compile Include="Assets\Script\Util\MtlImporter.cs" />
+     <Compile Include="Assets\Script\Util\Notification.cs" />
+     <Compile Include="Assets\Script\Util\ObjImporter.cs" />
+     <Compile Include="Assets\Script\Util\Patern\GameToolBox.cs" />
+     <Compile Include="Assets\Script\Util\Patern\Observer.cs" />
+     <Compile Include="Assets\Script\Util\Patern\Singleton.cs" />
+     <Compile Include="Assets\Script\Util\Patern\Subject.cs" />
+     <Compile Include="Assets\Script\Util\Patern\SubjectMono.cs" />
+     <Compile Include="Assets\Script\Util\Patern\ToolBox.cs" />
+     <Compile Include="Assets\Script\Util\Polyline.cs" />
+     <Compile Include="Assets\Script\Util\Save.cs" />
+     <Compile Include="Assets\Script\Util\SaveContainer.cs" />
+     <Compile Include="Assets\Script\Util\TestDevice.cs" />
+     <Compile Include="Assets\Script\Util\Thread Ninja\Ninja.cs" />
+     <Compile Include="Assets\Script\Util\Thread Ninja\Task.cs" />
+     <Compile Include="Assets\Script\Util\Thread Ninja\TaskState.cs" />
+     <Compile Include="Assets\Script\Util\Thread Ninja\ThreadNinjaMonoBehaviourExtensions.cs" />
+     <Compile Include="Assets\Script\Util\Timer.cs" />
+     <Compile Include="Assets\Script\Util\UIDebug.cs" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Art\Shader\GUI3D Text Shader.shader" />
+     <None Include="Assets\test.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>S:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>S:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>S:/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
